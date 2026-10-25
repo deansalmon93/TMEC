@@ -648,3 +648,7 @@ details.acc .acc-body { padding: 0 24px 22px; }
   .badges { display: grid; grid-template-columns: repeat(2, minmax(0, 380px)); justify-content: center; gap: 16px; }
   .badges .logo-badge { width: 100%; }
 }
+@media (min-width: 641px) {
+  .welcome .badge-row { display: grid; grid-template-columns: repeat(2, minmax(0, 360px)); justify-content: center; gap: 14px; }
+  .welcome .badge-row .logo-badge { width: 100%; }
+}
