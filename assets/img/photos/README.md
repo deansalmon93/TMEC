@@ -2,6 +2,10 @@
 
 Drop JPGs here with these exact names and they appear automatically (no code changes).
 Until a photo is added, a branded black-and-gold placeholder shows instead.
+
+The home page banner, Latest News cards and explore tiles currently use illustrated artwork
+(Mourne Mountains backdrop with the horse from the logo). Replace any of them by uploading a real
+photo with the same filename.
 Landscape photos around 1600px wide work best; keep each under ~400 KB.
 
 | File | Where it shows |

@@ -20,7 +20,7 @@
     var src = el.getAttribute('data-img');
     var probe = new Image();
     probe.onload = function () {
-      el.style.setProperty('--img', 'url("' + src + '")');
+      el.style.setProperty('--img', 'url("' + new URL(src, document.baseURI).href + '")');
       el.classList.remove('placeholder');
     };
     probe.src = src;

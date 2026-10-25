@@ -1,0 +1,69 @@
+# Pages CMS settings – controls what editors see at https://app.pagescms.org
+# Only Events and Gallery are editable here; the rest of the site is unchanged.
+
+media:
+  - name: gallery
+    label: Gallery photos
+    input: assets/img/gallery
+    output: assets/img/gallery
+    categories: [image]
+
+content:
+  - name: events
+    label: Events
+    type: file
+    path: data/events.json
+    format: json
+    list: true
+    fields:
+      - name: title
+        label: Event name
+        type: string
+        required: true
+      - name: date
+        label: Date
+        type: date
+        default: ""
+        description: Leave empty if the date isn't confirmed yet. Events disappear from the website automatically once the date has passed.
+        options:
+          format: yyyy-MM-dd
+      - name: when
+        label: Date text (if no date yet)
+        type: string
+        description: "Shown when there's no date, e.g. 'Spring – TBC' or 'Summer 2027'."
+      - name: description
+        label: Description
+        type: text
+      - name: link
+        label: Link (optional)
+        type: string
+        description: e.g. a schedule, entry form or Facebook event address, starting with https://
+      - name: link_label
+        label: Link button text (optional)
+        type: string
+        description: e.g. "Enter online" or "View schedule". Defaults to "More info".
+
+  - name: gallery
+    label: Gallery
+    type: file
+    path: data/gallery.json
+    format: json
+    list: true
+    fields:
+      - name: image
+        label: Photo
+        type: image
+        required: true
+        options:
+          media: gallery
+          extensions: [jpg, jpeg, png, webp]
+          rename: safe
+      - name: caption
+        label: Caption
+        type: string
+      - name: category
+        label: Category
+        type: select
+        required: true
+        options:
+          values: [Lessons, Camps, Events, The Yard]

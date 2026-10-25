@@ -11,6 +11,21 @@ Static website for [tullymurryequestrian.com](https://www.tullymurryequestrian.c
 
 Styles are in `css/style.css` (brand colours at the top), behaviour in `js/main.js`.
 
+## Editing events and the gallery (no code needed)
+Events and gallery photos are edited with **Pages CMS** (free), at https://app.pagescms.org.
+
+**One-off setup (owner):**
+1. Go to https://app.pagescms.org and sign in with GitHub.
+2. Open the `tmec` repository. You'll see two sections: **Events** and **Gallery**.
+3. To give someone access, open **Collaborators** in Pages CMS and invite them by email. They don't need a GitHub account.
+
+**Editors:**
+- **Events:** add an event with its name, date (or leave the date empty and type e.g. "Spring" in *Date text*), a short description and an optional link. Past events disappear from the site automatically.
+- **Gallery:** add a photo, write a caption and choose a category (Lessons, Camps, Events, The Yard).
+- Click **Save**. The live site updates within a minute or two.
+
+The data lives in `data/events.json` and `data/gallery.json`; the editor settings are in `.pages.yml`.
+
 ## Adding photos
 See `assets/img/photos/README.md` and `assets/img/gallery/README.md`. Drop files in with the listed names and they replace the placeholders automatically.
 
