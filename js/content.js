@@ -29,23 +29,15 @@
         }
       });
       dated.sort(function (a, b) { return a._d - b._d; });
-      var all = dated.concat(undated);
-      if (!all.length) {
-        list.innerHTML = '<p class="note center">New dates are coming soon. Follow us on Facebook for the latest updates.</p>';
-        return;
-      }
-      list.innerHTML = all.map(function (e) {
-        var when = e._d
-          ? '<b>' + e._d.getDate() + '</b><small>' + MONTHS[e._d.getMonth()] + ' ' + e._d.getFullYear() + '</small>'
-          : '<b>TBC</b><small>' + esc(e.when || 'Date to follow') + '</small>';
-        var sub = e._d ? '<span class="event-day">' + DAYS[e._d.getDay()] + '</span>' : '';
-        var btn = e.link
-          ? '<a class="btn dark-ghost" href="' + esc(e.link) + '" target="_blank" rel="noopener">' + esc(e.link_label || 'More info') + '</a>'
-          : '<a class="btn dark-ghost" href="tel:+442844811880">Enquire</a>';
-        return '<article class="event"><div class="when">' + when + '</div><div>' + sub +
-          '<h3>' + esc(e.title) + '</h3>' + (e.description ? '<p>' + esc(e.description) + '</p>' : '') +
-          '</div>' + btn + '</article>';
+      var notice = '<div class="event-notice"><strong>Dates coming soon</strong><p>We’re preparing the next programme. Follow our Facebook group or contact us for updates.</p></div>';
+      var confirmed = dated.map(function (e) {
+        var btn = e.link ? '<a class="btn dark-ghost" href="' + esc(e.link) + '" target="_blank" rel="noopener">' + esc(e.link_label || 'More info') + '</a>' : '<a class="btn dark-ghost" href="tel:+442844811880">Enquire</a>';
+        return '<article class="event"><div class="when"><b>' + e._d.getDate() + '</b><small>' + MONTHS[e._d.getMonth()] + ' ' + e._d.getFullYear() + '</small></div><div><span class="event-day">' + DAYS[e._d.getDay()] + '</span><h3>' + esc(e.title) + '</h3>' + (e.description ? '<p>' + esc(e.description) + '</p>' : '') + '</div>' + btn + '</article>';
       }).join('');
+      var regular = undated.length ? '<div class="regular-events"><h3>Events at Tullymurry</h3><p class="note">An introduction to our programme; dates and entries are announced separately.</p><div class="cards">' + undated.map(function (e) {
+        return '<article class="card"><span class="meta">' + esc(e.when || 'Programme') + '</span><h4>' + esc(e.title) + '</h4>' + (e.description ? '<p>' + esc(e.description) + '</p>' : '') + '</article>';
+      }).join('') + '</div></div>' : '';
+      list.innerHTML = (confirmed || notice) + regular;
     }).catch(function () {
       list.innerHTML = '<p class="note center">Event dates are posted on our Facebook page, or call us on 028 4481 1880.</p>';
     });
