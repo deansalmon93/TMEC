@@ -628,3 +628,4 @@ details.acc .acc-body { padding: 0 24px 22px; }
 .topbar a.hide-sm { margin-right: 1.6em; }
 .topbar .wrap > div { white-space: nowrap; }
 @media (max-width: 1500px) { .topbar .hide-md { display: none; } }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
