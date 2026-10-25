@@ -1,1 +1,43 @@
-[]
+[
+  {
+    "image": "assets/img/photos/tile-riding-school.jpg",
+    "caption": "Riding at Tullymurry — August 2026",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/photos/tile-camps.jpg",
+    "caption": "Camp memories at Tullymurry",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/photos/events-two-phase.jpg",
+    "caption": "Cross-country at Tullymurry — photo: Sporting Images",
+    "category": "Events"
+  },
+  {
+    "image": "assets/img/photos/livery-1.jpg",
+    "caption": "Horses enjoying the paddock",
+    "category": "The Yard"
+  },
+  {
+    "image": "assets/img/photos/rda.jpg",
+    "caption": "Angel and the RDA team at the St Patrick’s Coast Trek — September 2026",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/photos/tile-gallery.jpg",
+    "caption": "Riders together at Tullymurry",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/photos/camps-2.jpg",
+    "caption": "Halloween camp memories",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/photos/events-rds.jpg",
+    "caption": "Riders and ponies beside the show jumps",
+    "category": "Events"
+  }
+]
+

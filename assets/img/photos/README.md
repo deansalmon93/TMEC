@@ -3,9 +3,7 @@
 Drop JPGs here with these exact names and they appear automatically (no code changes).
 Until a photo is added, a branded black-and-gold placeholder shows instead.
 
-The home page banner, Latest News cards and explore tiles currently use illustrated artwork
-(Mourne Mountains backdrop with the horse from the logo). Replace any of them by uploading a real
-photo with the same filename.
+Activity images now use selected Tullymurry photographs. See SOURCES.md for provenance. Facilities slots are deliberately blank; restore their data-img attributes only when facilities photos are requested.
 Landscape photos around 1600px wide work best; keep each under ~400 KB.
 
 | File | Where it shows |
@@ -19,3 +17,4 @@ Landscape photos around 1600px wide work best; keep each under ~400 KB.
 | events-two-phase.jpg, events-rds.jpg | Events page |
 | livery-1.jpg | Livery page |
 | facilities-xc.jpg, facilities-indoor.jpg, facilities-outdoor.jpg, facilities-yard.jpg | Facilities page |
+
