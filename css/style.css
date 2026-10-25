@@ -674,3 +674,19 @@ details.acc .acc-body { padding: 0 24px 22px; }
 .first-visit-faq details p { margin: 14px 0 0; }
 .first-visit-faq summary:focus-visible { outline: 2px solid var(--gold-deep); outline-offset: 6px; }
 @media (max-width: 560px) { .page-hero p { font-size: 1rem; } .event-notice { padding: 20px; } }
+
+/* Keep the homepage information accessible on phones. */
+@media (max-width: 1180px) {
+  .home-information .wrap { flex-direction: column; align-items: center; gap: 8px; padding: 12px 0; text-align: center; }
+  .home-information .wrap > div { white-space: normal; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .home-information .hide-sm, .home-information .hide-md, .home-information .bhs-flag { display: block; }
+  .home-information span + span::before { content: none; }
+  .home-information a.hide-sm { margin-right: 0; }
+  .home-information { letter-spacing: .03em; line-height: 1.5; }
+  .home-information a { display: inline-block; padding: 4px 0; }
+  .home-header .main-nav { inset: var(--header-h) 0 0; }
+}
+
+@media (max-width: 1180px) {
+  .nav-open .home-header { position: fixed; inset: 0 0 auto; backdrop-filter: none; background: var(--black); }
+}
