@@ -5,7 +5,7 @@ Static website for [tullymurryequestrian.com](https://www.tullymurryequestrian.c
 ## Pages
 - `index.html` – Home
 - `riding-school.html`, `riding-camps.html`, `events.html`, `livery.html`, `gallery.html`, `facilities.html`
-- `clubs.html` – East Down Pony Club affiliation and Riding for the Disabled (under Riding School in the menu)
+- `clubs.html` – Pony Club Linked Centre and Riding for the Disabled (under Riding School in the menu)
 - `contact.html` – contact details and map
 - `404.html` – page-not-found
 
@@ -22,7 +22,7 @@ All forms send to info@tullymurryequestrian.com.
 Until the key is added, submitting a form opens the visitor's email app with the details filled in, addressed to info@.
 
 ## Logos
-Add `bhs-approved.png` and `east-down-pony-club.png` to `assets/img/logos/` (see the README there). Until then, styled text badges show in their place.
+The BHS logo is in `assets/img/logos/bhs-logo.png`.
 
 ## Hosting on Cloudflare Pages
 1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.

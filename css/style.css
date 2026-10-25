@@ -587,3 +587,19 @@ details.acc .acc-body { padding: 0 24px 22px; }
 .contact-mini span { display: block; font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
 .contact-mini a { color: var(--white); text-decoration: none; }
 .contact-mini a:hover { color: var(--gold); }
+
+/* BHS badge uses the real logo; Pony Club badge stays text */
+.logo-badge.bhs { padding: 10px 22px 10px 12px; gap: 16px; }
+.logo-badge.bhs::before { display: none; }
+.logo-badge.bhs img { height: 70px; width: auto; }
+.logo-badge.bhs .lb-text { border-left: 1px solid var(--stone); padding-left: 16px; }
+.logo-badge.bhs small { color: #8b1538; }
+.logo-badge.bhs.on-dark { background: var(--white); border-color: var(--white); }
+.logo-badge.bhs.on-dark small { color: #8b1538; }
+.logo-badge.bhs.on-dark b { color: var(--ink); }
+.club-logo-panel .logo-badge { transform: scale(1.35); }
+.logo-badge.pc small { color: #1f3a8a; }
+.club-logo-panel { background: var(--white); }
+.pc-logo-large { width: min(62%, 300px); height: auto; }
+.site-footer .logo-badge b { font-size: 1.1rem; }
+.site-footer .logo-badge.bhs img { height: 56px; }
