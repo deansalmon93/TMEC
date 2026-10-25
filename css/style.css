@@ -626,3 +626,5 @@ details.acc .acc-body { padding: 0 24px 22px; }
 .fb-card .more { font-size: .72rem; letter-spacing: .18em; text-transform: uppercase; color: var(--ink); white-space: nowrap; border-bottom: 1px solid var(--gold); }
 @media (max-width: 480px) { .fb-card { flex-wrap: wrap; } .fb-card .more { margin-left: 74px; } }
 .topbar a.hide-sm { margin-right: 1.6em; }
+.topbar .wrap > div { white-space: nowrap; }
+@media (max-width: 1500px) { .topbar .hide-md { display: none; } }
