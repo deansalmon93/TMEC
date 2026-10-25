@@ -635,3 +635,16 @@ details.acc .acc-body { padding: 0 24px 22px; }
 .hero p.tag { text-wrap: balance; font-size: clamp(1.25rem, 2.2vw, 1.8rem); }
 @media (min-width: 900px) { .hero p.tag { white-space: nowrap; } }
 .page-hero p, .section-head h2, h2 { text-wrap: balance; }
+.logo-badge.rda small { color: #4b8b2f; }
+.logo-badge.ei small { color: #2f6b1f; }
+.logo-badge.ei img { height: 74px; }
+/* Logo badges: same width, stacked neatly on phones */
+@media (max-width: 640px) {
+  .badges, .badge-row { flex-direction: column; align-items: center; }
+  .badges .logo-badge, .badge-row .logo-badge { width: min(100%, 340px); }
+}
+/* "Proud to support" logos: tidy 2x2 grid on larger screens */
+@media (min-width: 641px) {
+  .badges { display: grid; grid-template-columns: repeat(2, minmax(0, 380px)); justify-content: center; gap: 16px; }
+  .badges .logo-badge { width: 100%; }
+}
