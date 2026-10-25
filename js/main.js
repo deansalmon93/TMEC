@@ -26,6 +26,18 @@
     probe.src = src;
   });
 
+  // Official logos (BHS, Pony Club): use the real file once it's in assets/img/logos/
+  document.querySelectorAll('.logo-badge[data-logo]').forEach(function (el) {
+    var img = el.querySelector('img');
+    var probe = new Image();
+    probe.onload = function () {
+      img.src = el.getAttribute('data-logo');
+      img.hidden = false;
+      el.classList.add('has-logo');
+    };
+    probe.src = el.getAttribute('data-logo');
+  });
+
   // Reveal on scroll
   var items = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {

@@ -39,6 +39,7 @@ body {
   overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
 a { color: inherit; }
 p { margin: 0 0 1.1em; }
 h1, h2, h3, h4 {
@@ -480,3 +481,109 @@ details.acc .acc-body { padding: 0 24px 22px; }
   html { scroll-behavior: auto; }
   .scroll-cue::after { animation: none; }
 }
+
+/* ---------- Topbar BHS flag ---------- */
+.topbar .bhs-flag { color: var(--gold); font-weight: 500; letter-spacing: .12em; text-transform: uppercase; font-size: .72rem; }
+@media (max-width: 1180px) { .topbar .bhs-flag { display: none; } }
+
+/* ---------- Official logo badges (BHS / Pony Club) ---------- */
+.logo-badge {
+  display: inline-flex; align-items: center; gap: 14px;
+  background: var(--white);
+  border: 1px solid var(--stone);
+  padding: 14px 22px 14px 16px;
+  text-align: left; vertical-align: middle;
+  min-height: 74px;
+}
+.logo-badge::before {
+  content: ""; flex: 0 0 40px; height: 40px; border-radius: 50%;
+  border: 1.5px solid var(--gold-deep);
+  background: radial-gradient(circle, var(--gold) 0 4px, transparent 5px);
+}
+.logo-badge .lb-text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo-badge small { font-size: .66rem; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+.logo-badge b { font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; color: var(--ink); }
+.logo-badge.has-logo { padding: 10px 16px; }
+.logo-badge.has-logo::before, .logo-badge.has-logo .lb-text { display: none; }
+.logo-badge img { height: 64px; width: auto; }
+.logo-badge.on-dark { background: rgba(255,255,255,.04); border-color: rgba(248,176,32,.35); }
+.logo-badge.on-dark small { color: #a59d8f; }
+.logo-badge.on-dark b { color: var(--white); }
+.logo-badge.on-dark.has-logo { background: var(--white); }
+.badge-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin-top: 26px; }
+.badges { align-items: center; }
+.club-logo-panel { display: grid; place-items: center; background: var(--cream); aspect-ratio: 5 / 4; outline: 1px solid var(--gold); outline-offset: 14px; }
+.club-logo-panel .logo-badge { transform: scale(1.25); }
+.club-logo-panel .logo-badge.has-logo { transform: none; background: transparent; border: 0; }
+.club-logo-panel .logo-badge.has-logo img { height: 180px; }
+
+/* ---------- Forms ---------- */
+.form-split { display: grid; grid-template-columns: 1fr 1.25fr; gap: clamp(30px, 6vw, 80px); align-items: start; }
+.form-split .logo-badge { margin-top: 8px; }
+@media (max-width: 900px) { .form-split { grid-template-columns: 1fr; } }
+.form-card {
+  background: var(--white);
+  border-top: 3px solid var(--gold);
+  padding: clamp(24px, 4vw, 44px);
+  box-shadow: 0 1px 0 var(--stone), 0 30px 60px -40px rgba(0,0,0,.5);
+}
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 22px; }
+.form-grid .full { grid-column: 1 / -1; }
+@media (max-width: 560px) { .form-grid { grid-template-columns: 1fr; } }
+.tm-form label, .tm-form legend {
+  display: block; margin-bottom: 8px;
+  font-size: .74rem; font-weight: 500; letter-spacing: .18em; text-transform: uppercase; color: var(--muted);
+}
+.tm-form legend span, .tm-form label span[aria-hidden] { color: var(--gold-deep); }
+.tm-form fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+.tm-form input:not([type=radio]):not([type=checkbox]), .tm-form select, .tm-form textarea {
+  width: 100%;
+  font: inherit; font-size: 1rem; color: var(--text);
+  background: var(--paper);
+  border: 1px solid #d9cfbd; border-radius: var(--radius);
+  padding: 13px 14px;
+  transition: border-color .2s, box-shadow .2s;
+  appearance: none;
+}
+.tm-form select {
+  background-image: linear-gradient(45deg, transparent 50%, var(--gold-deep) 50%), linear-gradient(-45deg, transparent 50%, var(--gold-deep) 50%);
+  background-position: calc(100% - 20px) 52%, calc(100% - 14px) 52%;
+  background-size: 6px 6px; background-repeat: no-repeat; padding-right: 40px;
+}
+.tm-form textarea { resize: vertical; min-height: 120px; }
+.tm-form input:focus, .tm-form select:focus, .tm-form textarea:focus {
+  outline: none; border-color: var(--gold); box-shadow: 0 0 0 3px rgba(248,176,32,.22);
+}
+.choice { display: flex; flex-wrap: wrap; gap: 10px; }
+.choice label { margin: 0; cursor: pointer; text-transform: none; letter-spacing: .02em; font-size: .95rem; color: var(--text); }
+.choice input { position: absolute; opacity: 0; pointer-events: none; }
+.choice span {
+  display: inline-block; padding: 10px 18px;
+  border: 1px solid #d9cfbd; border-radius: 40px; background: var(--paper);
+  transition: background .2s, border-color .2s, color .2s;
+}
+.choice label:hover span { border-color: var(--gold); }
+.choice input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--gold); }
+.choice input:focus-visible + span { box-shadow: 0 0 0 3px rgba(248,176,32,.35); }
+.tm-form .invalid input, .tm-form .invalid select, .tm-form .invalid textarea, .tm-form fieldset.invalid .choice span { border-color: #c0392b; }
+.tm-form .invalid > label, .tm-form fieldset.invalid legend { color: #c0392b; }
+.hp { position: absolute !important; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.form-foot { display: flex; align-items: center; flex-wrap: wrap; gap: 18px; margin-top: 26px; }
+.form-msg { margin: 0; font-size: .95rem; flex: 1 1 220px; }
+.form-msg.ok { color: #2e7d4f; }
+.form-msg.error { color: #c0392b; }
+.tm-form button[disabled] { opacity: .6; cursor: wait; }
+
+/* Dark variant (home contact form) */
+.tm-form.on-dark label, .tm-form.on-dark legend { color: #b9b1a3; }
+.tm-form.on-dark input:not([type=radio]):not([type=checkbox]), .tm-form.on-dark select, .tm-form.on-dark textarea {
+  background-color: rgba(255,255,255,.05); border-color: rgba(248,176,32,.3); color: var(--white);
+}
+.tm-form.on-dark select option { color: var(--text); }
+.tm-form.on-dark .form-msg.ok { color: #8fd3a8; }
+.tm-form.on-dark .form-msg.error { color: #ff9a8c; }
+.contact-mini { list-style: none; padding: 0; margin: 30px 0 0; }
+.contact-mini li { padding: 14px 0; border-top: 1px solid rgba(255,255,255,.1); color: #ddd5c6; }
+.contact-mini span { display: block; font-size: .7rem; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+.contact-mini a { color: var(--white); text-decoration: none; }
+.contact-mini a:hover { color: var(--gold); }
