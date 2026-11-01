@@ -1,5 +1,275 @@
 [
   {
+    "image": "assets/img/gallery/facilities/01-a751624f.jpg",
+    "caption": "Indoor arena ready for schooling",
+    "category": "Facilities"
+  },
+  {
+    "image": "assets/img/gallery/facilities/02-a02186c0.jpg",
+    "caption": "Outdoor arena overlooking the Mourne Mountains",
+    "category": "Facilities"
+  },
+  {
+    "image": "assets/img/gallery/the-yard/03-2900a3cb.jpg",
+    "caption": "A pony with views across the County Down countryside",
+    "category": "The Yard"
+  },
+  {
+    "image": "assets/img/gallery/camps/04-0197ba80.jpg",
+    "caption": "Halloween pony dress-up",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/lessons/05-b79a184b.jpg",
+    "caption": "Young riders in the outdoor arena",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/gallery/lessons/06-45ce67dc.jpg",
+    "caption": "Group riding in the outdoor arena",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/gallery/camps/07-c51d0e71.jpg",
+    "caption": "Learning together at pony camp",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/08-675d9636.jpg",
+    "caption": "Learning about loading a pony into a trailer",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/09-7fa0155a.jpg",
+    "caption": "Practising mane plaiting",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/10-c973a689.jpg",
+    "caption": "Pony-care time with friends",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/11-f2bd6e79.jpg",
+    "caption": "A spooky visitor at Halloween camp",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/12-dd69b4de.jpg",
+    "caption": "Grooming the ponies",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/13-b72f2aed.jpg",
+    "caption": "Working together to groom a pony",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/camps/14-fe61216e.jpg",
+    "caption": "Learning how to care for hooves",
+    "category": "Camps"
+  },
+  {
+    "image": "assets/img/gallery/events/15-41daf7c9.jpg",
+    "caption": "Young rider and pony in the arena",
+    "category": "Events"
+  },
+  {
+    "image": "assets/img/gallery/lessons/16-7d49c866.jpg",
+    "caption": "Leading a pony through the yard",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/gallery/lessons/17-f7009db0.jpg",
+    "caption": "Young rider in the indoor arena",
+    "category": "Lessons"
+  },
+  {
+    "image": "assets/img/gallery/facilities/18-02755cb3.jpg",
+    "caption": "Indoor arena with colourful practice fences",
+    "category": "Facilities"
+  },
+  {
+    "image": "assets/img/gallery/facilities/19-353d5153.jpg",
+    "caption": "Show jumps in the indoor arena",
+    "category": "Facilities"
+  },
+  {
+    "image": "assets/img/gallery/facilities/20-155c810b.jpg",
+    "caption": "A wide view of the indoor arena",
+    "category": "Facilities"
+  },
+  {
+    "image": "assets/img/gallery/facilities/21-4d0d9a12.jpg",
+    "caption": "Indoor arena set up for jumping",
+    "category": "Facilities"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/22-3f59dc6d.jpg",
+    "caption": "Colourful woodland cross-country fence",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/23-3f996217.jpg",
+    "caption": "Decorated fence beneath the trees",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/24-fa47c256.jpg",
+    "caption": "Butterfly fence on the woodland course",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/25-6387acc8.jpg",
+    "caption": "Flower-painted fences on the course",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/26-3841c750.jpg",
+    "caption": "Fairytale-themed cross-country fence",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/27-0a97eecf.jpg",
+    "caption": "A panoramic view of the fairytale fence",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/28-4ea26ea3.jpg",
+    "caption": "Natural log fence beside the woodland",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/29-d17d74b5.jpg",
+    "caption": "Timber obstacles on the cross-country course",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/30-731fe2c8.jpg",
+    "caption": "Star-decorated bank obstacle",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/31-1effe48a.jpg",
+    "caption": "A wide view of the bank complex",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/32-5622de74.jpg",
+    "caption": "Fences across the grassy hillside",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/33-6af3e5c2.jpg",
+    "caption": "Brush fence with a star and flowers",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/34-723c8358.jpg",
+    "caption": "Yellow and white fence with flowers",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/35-7aec1076.jpg",
+    "caption": "Log fence beside the stone complex",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/36-adcfa09e.jpg",
+    "caption": "Black timber fence in the open fields",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/37-fa40d186.jpg",
+    "caption": "Brush-topped log fences",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/events/38-9e7be8dc.jpg",
+    "caption": "Jumping the woodland fence — photo: Sporting Images",
+    "category": "Events"
+  },
+  {
+    "image": "assets/img/gallery/events/39-d9e9fc21.jpg",
+    "caption": "Horse and rider at the water jump — photo: Sporting Images",
+    "category": "Events"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/40-86c4ec31.jpg",
+    "caption": "Marked fences with countryside views",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/41-6bdd63f4.jpg",
+    "caption": "Brush fence on the competition course",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/42-6e365be9.jpg",
+    "caption": "Approach to the water complex",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/43-9f914ea4.jpg",
+    "caption": "Flower-decorated brush fence",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/44-a6010526.jpg",
+    "caption": "Bank complex and course flags",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/45-7dd955d7.jpg",
+    "caption": "Woodland fence between mature trees",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/46-262ae18f.jpg",
+    "caption": "Colourful flower fence ready for competition",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/47-b45e18fe.jpg",
+    "caption": "A selection of cross-country fences",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/48-ea95090d.jpg",
+    "caption": "Timber fence with decorative wings",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/49-75c779d9.jpg",
+    "caption": "Brush fence overlooking the fields",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/50-a28ed74a.jpg",
+    "caption": "Flower-decorated timber obstacle",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/51-e683d9e5.jpg",
+    "caption": "Log fence through the stone complex",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/52-ac828480.jpg",
+    "caption": "Panoramic view of the stone complex",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/53-fa4dd9fa.jpg",
+    "caption": "Yellow and white fence beside the stone complex",
+    "category": "Cross-country"
+  },
+  {
+    "image": "assets/img/gallery/cross-country/54-037417d2.jpg",
+    "caption": "Brush-topped log fence on the course",
+    "category": "Cross-country"
+  },
+  {
     "image": "assets/img/photos/tile-riding-school.jpg?v=20261025-photos",
     "caption": "Riding at Tullymurry — August 2026",
     "category": "Lessons"

@@ -66,4 +66,4 @@ content:
         type: select
         required: true
         options:
-          values: [Lessons, Camps, Events, The Yard]
+          values: [Lessons, Camps, Events, The Yard, Facilities, Cross-country]
