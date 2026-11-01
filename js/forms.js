@@ -1,6 +1,6 @@
 // Tullymurry Equestrian Centre — website forms
 // -----------------------------------------------------------------------------
-// SETUP: once info@tullymurry.co.uk is working, get a free access key
+// SETUP: once info@tullymurryequestrian.co.uk is working, get a free access key
 // at https://web3forms.com (enter that email address, the key is emailed to it)
 // and paste it between the quotes below. Every form on the site will then
 // deliver straight to that inbox.
@@ -9,7 +9,7 @@
 // own email app with the message filled in, addressed to the email below.
 // -----------------------------------------------------------------------------
 var TM_FORMS = {
-  email: 'info@tullymurry.co.uk',
+  email: 'info@tullymurryequestrian.co.uk',
   web3formsKey: ''
 };
 
