@@ -1,6 +1,6 @@
 # Tullymurry Equestrian Centre website
 
-Static website for [tullymurry.co.uk](https://www.tullymurry.co.uk). Plain HTML, CSS and a little JavaScript: no build step.
+Static website for [tullymurryequestrian.co.uk](https://www.tullymurryequestrian.co.uk). Plain HTML, CSS and a little JavaScript: no build step.
 
 ## Pages
 - `index.html` – Home
@@ -30,7 +30,7 @@ The data lives in `data/events.json` and `data/gallery.json`; the editor setting
 See `assets/img/photos/README.md` and `assets/img/gallery/README.md`. Drop files in with the listed names and they replace the placeholders automatically.
 
 ## Forms (lesson booking, livery enquiry, home contact)
-All forms send to info@tullymurry.co.uk.
+All forms send to info@tullymurryequestrian.co.uk.
 1. Once that mailbox is working, go to https://web3forms.com, enter the address and you'll be emailed a free access key.
 2. Paste the key into `js/forms.js` where it says `web3formsKey: ''`, then push.
 
@@ -44,6 +44,6 @@ The BHS logo is in `assets/img/logos/bhs-logo.png`.
 2. Pick the `tmec` repository, branch `main`.
 3. Framework preset: **None**. Build command: *(leave empty)*. Build output directory: `/`.
 4. Deploy. You'll get a `*.pages.dev` address to preview.
-5. Once you have access to the domain: **Custom domains** → add `tullymurry.co.uk` and `www.tullymurry.co.uk`. If the domain's DNS is on Cloudflare this is automatic; otherwise move the nameservers to Cloudflare or add the CNAME records it shows you.
+5. Once you have access to the domain: **Custom domains** → add `tullymurryequestrian.co.uk` and `www.tullymurryequestrian.co.uk`. If the domain's DNS is on Cloudflare this is automatic; otherwise move the nameservers to Cloudflare or add the CNAME records it shows you.
 
 Every push to `main` redeploys the site automatically.
