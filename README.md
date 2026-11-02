@@ -39,11 +39,10 @@ Until the key is added, submitting a form opens the visitor's email app with the
 ## Logos
 The BHS logo is in `assets/img/logos/bhs-logo.png`.
 
-## Hosting on Cloudflare Pages
-1. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-2. Pick the `tmec` repository, branch `main`.
-3. Framework preset: **None**. Build command: *(leave empty)*. Build output directory: `/`.
-4. Deploy. You'll get a `*.pages.dev` address to preview.
-5. Once you have access to the domain: **Custom domains** → add `tullymurryequestrian.co.uk` and `www.tullymurryequestrian.co.uk`. If the domain's DNS is on Cloudflare this is automatic; otherwise move the nameservers to Cloudflare or add the CNAME records it shows you.
+## Hosting on Cloudflare
+The site runs as a Cloudflare Worker called `tmec` (account: Dean@trt-ni.co.uk), connected to this repository.
 
-Every push to `main` redeploys the site automatically.
+- Every push to `main` is built and deployed automatically (Cloudflare dashboard → Workers & Pages → `tmec` → Deployments).
+- `wrangler.jsonc` sets which folder is served and uses `404.html` for missing pages. `.assetsignore` lists repo files that are not published.
+- Addresses: https://www.tullymurryequestrian.co.uk (main) and https://tullymurryequestrian.co.uk, which redirects to www. Preview: https://tmec.trt-ni.workers.dev
+- DNS for tullymurryequestrian.co.uk is managed in Cloudflare. The domain is still registered with 123-reg, and email (info@) is still hosted there. Don't delete the MX, SPF (TXT), `_dmarc`, `_autodiscover` or `email` records in Cloudflare, or email will stop working.
