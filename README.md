@@ -46,3 +46,8 @@ The site runs as a Cloudflare Worker called `tmec` (account: Dean@trt-ni.co.uk),
 - `wrangler.jsonc` sets which folder is served and uses `404.html` for missing pages. `.assetsignore` lists repo files that are not published.
 - Addresses: https://www.tullymurryequestrian.co.uk (main) and https://tullymurryequestrian.co.uk, which redirects to www. Preview: https://tmec.trt-ni.workers.dev
 - DNS for tullymurryequestrian.co.uk is managed in Cloudflare. The domain is still registered with 123-reg, and email (info@) is still hosted there. Don't delete the MX, SPF (TXT), `_dmarc`, `_autodiscover` or `email` records in Cloudflare, or email will stop working.
+
+## Page addresses (SEO)
+Pages are served without `.html`, for example `/riding-school`. Cloudflare redirects `.html` addresses to these. Internal links, canonical tags and `sitemap.xml` all use these clean addresses, so link new pages the same way (`href="/page-name"`). When you add a page, add it to `sitemap.xml` as well.
+
+To preview the site locally exactly as it's served, run `npx wrangler dev` in this folder and open http://localhost:8787. Opening the HTML files directly won't follow the menu links.
